@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q1 Skills Test</title>
+  <style>
+    body {
+      font-family: Gill Sans, sans-serif;
+      background-color: #f7f7f7;
+      background-image: url(red.jpg);
+    }
+    .form-card {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .page-title {
+      text-align: center;
+      color: #c62828;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+    .logo img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+    .center-head {
+      flex-grow: 1;
+      text-align: center;
+    }
+    .academy-title {
+      font-weight: bold;
+      color: #c62828;
+      font-size: 18px;
+    }
+    .academy-sub {
+      font-size: 14px;
+      color: #555;
+    }
+    .form-title {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    .photo-placeholder {
+      width: 100px;
+      height: 100px;
+      border: 2px dashed #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .photo-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .divider {
+      height: 1px;
+      background: #ddd;
+      margin: 15px 0;
+    }
+    .registration-pill {
+      display: inline-block;
+      background: #c62828;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+    .registration-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      height: 80px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #c62828;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #a81f1f;
+    }
+  </style>
+</head>
+</body>
+<div class="form-card">
+<!-- Top Header -->
+    <h1 class="page-title">Robotics Club Application</h1>
+    <div class="card-top">
+      <div class="logo">
+        <img src="obmc-logo.jpg" alt="Robotics Club Logo">
+    </div>
+      <div class="center-head">
+        <div class="academy-title">OBMC Robotics Club</div>
+        <div class="academy-sub">Innovation • Teamwork • Learning</div>
+        <div class="form-title">APPLICATION FORM</div>
+      </div>
+      <div class="photo-placeholder">
+        <img src="robot.jpg" alt="Applicant Photo">
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="registration-wrapper">
+      <div class="registration-pill">REGISTRATION FORM</div>
+</div>
+
+<p>Welcome! Please fill out this form to apply for the OBMC Robotics Club.</p>
+
+<dl class="info-list">
+  <b><dt>Eligibility:</dt></b>
+  <dd>Open to all Grade 7–12 students.</dd>
+
+  <b><dt>Meeting Schedule:</dt></b>
+  <dd>Every Friday, 3:00 PM – 5:00 PM in the Computer Lab.</dd>
+
+  <b><dt>Requirements:</dt></b>
+  <dd>Basic interest in robotics, teamwork, and problem-solving.</dd>
+</dl>
+
+    <!-- Form Fields -->
+    <form>
+      <label>Full Name:</label>
+      <input type="text" name="fullname" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Grade Level:</label>
+      <select name="grade" required>
+        <option value="" disabled selected>Select your grade</option>
+        <option>Grade 7</option>
+        <option>Grade 8</option>
+        <option>Grade 9</option>
+        <option>Grade 10</option>
+      </select>
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" required> Male
+      <input type="radio" name="gender" value="Female"> Female
+
+      <label>What are your skills?</label>
+      <input type="checkbox" name="skills" value="Coding"> Coding
+      <input type="checkbox" name="skills" value="Design"> Design
+      <input type="checkbox" name="skills" value="Electronics"> Electronics
+
+        <div class="form-section">
+            <label for="about">Tell us why you want to join:</label><br>
+            <textarea id="about" name="about" rows="4" cols="40"required></textarea><br><br>
+        </div>
+
+<!-- New Section -->
+<div style="margin-top: 25px; font-family: 'Gill Sans'sans-serif;">
+
+  <h3 style="color:#000; font-weight:bold;">
+    Top Robotics Activities We Offer:
+  </h3>
+
+  <ul>
+    <li>Line Following Robots</li>
+    <li>Obstacle Avoidance Programming</li>
+    <li>Light Following Robot</li>
+  </ul>
+
+  <h3 style="color:#000; font-weight:bold; margin-top:20px;">
+    Helpful Links:
+  </h3>
+
+  <ol>
+    <li><a href="https://www.robotics.org" target="_blank">Robotics.org</a></li>
+    <li><a href="https://www.firstinspires.org/robotics/frc" target="_blank">FIRST Robotics</a></li>
+  </ol>
+
+</div>
+      <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+<footer style="text-align: center; margin-top: 15px; font-size: 12px; color: #000;">
+  © 2025 Robotics Club Application | Created by [Zaira Bermejo & 9-Emerald]
+</footer>
+
+</body>
+</html>
